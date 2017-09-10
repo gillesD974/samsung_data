@@ -88,8 +88,8 @@ names(avg_by_subject_activity)[1] <- "Subject_ID"
 names(avg_by_subject_activity)[2] <- "Activity"
 
 ## here is the firts required tidy_data_set !
-my_tidy_data_select <-my_tidy_data_select[,-1]
-write.csv(my_tidy_data_select, file="UCI HAR Dataset\\my_tidy_data.txt", row.names=FALSE)
+#my_tidy_data_select <-my_tidy_data_select[,-1]
+#write.table(my_tidy_data_select, file="UCI HAR Dataset\\my_tidy_data1.txt", row.names=FALSE)
 
 ## here is the second required tidy_data_set for the mean variables!
-write.csv(avg_by_subject_activity, file="UCI HAR Dataset\\avg_my_tidy_data.txt", row.names=FALSE)
+write.table(avg_by_subject_activity, file="UCI HAR Dataset\\avg_my_tidy_data1.txt", row.names=FALSE)
